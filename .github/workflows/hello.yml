@@ -1,9 +1,9 @@
-
 name: Hello Cron
 
 on:
+  workflow_dispatch:         # 手動実行ができる
   schedule:
-    - cron: "*/5 * * * *"
+    - cron: "*/5 * * * *"   # 5分ごと（UTC基準）
 
 jobs:
   say-hello:
